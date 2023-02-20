@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PracService.DB;
 
 namespace PracService.Pages
 {
@@ -20,6 +21,7 @@ namespace PracService.Pages
 	/// </summary>
 	public partial class AuthorisPage : Page
 	{
+		public static User user { get; set; }
 		public AuthorisPage()
 		{
 			InitializeComponent();
@@ -27,11 +29,23 @@ namespace PracService.Pages
 
 		private void btnReg_Click(object sender, RoutedEventArgs e)
 		{
-
+			NavigationService.Navigate(new RegPage());
 		}
 
 		private void btnEnter_Click(object sender, RoutedEventArgs e)
 		{
+			string login = tbLog.Text.Trim();
+			string password = tbPass.Password.Trim();
+			user = BdConnection.connection.User.Where(x => x.Login == login && x.Password == password).FirstOrDefault();
+			if(user != null)
+            {
+				//NavigationService.Navigate(new MainPage(user));
+            }
+			else if(user == null)
+            {
+				MessageBox.Show("Логин или пароль не верны");
+            }
+			
 
 		}
 	}

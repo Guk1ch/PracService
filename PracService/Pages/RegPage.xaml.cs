@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PracService.DB;
 
 namespace PracService.Pages
 {
@@ -27,12 +28,29 @@ namespace PracService.Pages
 
 		private void btnBack_Click(object sender, RoutedEventArgs e)
 		{
-
+			NavigationService.Navigate(new AuthorisPage());
 		}
+
 
 		private void btnReg_Click(object sender, RoutedEventArgs e)
 		{
-
+			User user = new User();
+			string Log = tbLog.Text.Trim();
+			string Pass = tbPass.Password.Trim();
+			user = BdConnection.connection.User.Where(x => x.Login == Log).FirstOrDefault();
+			if (user == null)
+			{
+				User newUser = new User();
+				newUser.Login = Log;
+				newUser.Password = Pass;
+				BdConnection.connection.User.Add(newUser);
+				BdConnection.connection.SaveChanges();
+				NavigationService.Navigate(new AuthorisPage());
+			}
+			else
+			{
+				MessageBox.Show("Что то не так");
+			}
 		}
 	}
 }

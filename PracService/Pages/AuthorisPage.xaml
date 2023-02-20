@@ -26,6 +26,9 @@
         <TextBlock Text="login" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25"/>
         <TextBlock Text="password" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25"/>
 
+        <TextBox x:Name="tbLog" Grid.Row="1" Grid.Column="2"/>
+        <PasswordBox x:Name="tbPass" Grid.Row="2" Grid.Column="2"/>
+
         <Button x:Name="btnReg" Content="Нет аккаунта" Click="btnReg_Click" Grid.Column="1" Grid.Row="3"/>
         <Button x:Name="btnEnter" Content="Войти" Click="btnEnter_Click" Grid.Column="2" Grid.Row="3"/>
 
