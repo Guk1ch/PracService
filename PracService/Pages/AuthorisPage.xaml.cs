@@ -39,7 +39,7 @@ namespace PracService.Pages
 			user = BdConnection.connection.User.Where(x => x.Login == login && x.Password == password).FirstOrDefault();
 			if(user != null)
             {
-				//NavigationService.Navigate(new MainPage(user));
+				NavigationService.Navigate(new MainPage(user));
             }
 			else if(user == null)
             {
