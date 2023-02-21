@@ -114,6 +114,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\AddCSPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AddServicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AuthorisPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -126,6 +134,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\EditCSPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditServicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -134,10 +150,20 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ServicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\AddClientPage.xaml.cs">
       <DependentUpon>AddClientPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddCSPage.xaml.cs">
+      <DependentUpon>AddCSPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddServicePage.xaml.cs">
+      <DependentUpon>AddServicePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\AuthorisPage.xaml.cs">
       <DependentUpon>AuthorisPage.xaml</DependentUpon>
@@ -148,11 +174,20 @@
     <Compile Include="Pages\EditClientPage.xaml.cs">
       <DependentUpon>EditClientPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\EditCSPage.xaml.cs">
+      <DependentUpon>EditCSPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditServicePage.xaml.cs">
+      <DependentUpon>EditServicePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RegPage.xaml.cs">
       <DependentUpon>RegPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ServicePage.xaml.cs">
+      <DependentUpon>ServicePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

@@ -7,8 +7,43 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="EditClientPage">
-
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnBack" Content="Назад" Click="btnBack_Click"/>
+        <TextBlock Text="Фамилия" Grid.Row="1" Grid.Column="0" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Text="Имя" Grid.Row="2" Grid.Column="0" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Text="Отчество" Grid.Row="3" Grid.Column="0" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Text="Гендер" Grid.Row="4" Grid.Column="0" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Text="Телефон" Grid.Row="5" Grid.Column="0" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Text="Дата рождения" Grid.Row="1" Grid.Column="2" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Text="ЭлПочта" Grid.Row="2" Grid.Column="2" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBox x:Name="tbSurname" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="tbName" Grid.Row="2" Grid.Column="1"/>
+        <TextBox x:Name="tbFName" Grid.Row="3" Grid.Column="1"/>
+        <ComboBox x:Name="cbGender" Grid.Row="4" Grid.Column="1"/>
+        <TextBox x:Name="tbPhone" Grid.Row="5" Grid.Column="1"/>
+        <TextBox x:Name="tbBrith" Grid.Row="1" Grid.Column="3"/>
+        <TextBox x:Name="tbEmail" Grid.Row="2" Grid.Column="3"/>
+
+        <Button x:Name="btnSave" Content="Сохранение" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="3" Click="btnSave_Click"/>
+        <Button x:Name="btnDel" Content="Удалить" Grid.Column="4" Grid.Row="0" Click="btnDel_Click"/>
+
+
+
     </Grid>
 </Page>

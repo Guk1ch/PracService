@@ -12,24 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using PracService.DB;
-using System.Collections.ObjectModel;
 
 namespace PracService.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для EditClientPage.xaml
+    /// Логика взаимодействия для EditServicePage.xaml
     /// </summary>
-    public partial class EditClientPage : Page
+    public partial class EditServicePage : Page
     {
-        public EditClientPage(Client client)
+        public EditServicePage()
         {
             InitializeComponent();
-        }
-
-        private void btnDel_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
