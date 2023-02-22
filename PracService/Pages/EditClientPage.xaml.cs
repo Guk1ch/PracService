@@ -31,5 +31,15 @@ namespace PracService.Pages
         {
 
         }
-    }
+
+		private void btnBack_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void btnSave_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+	}
 }

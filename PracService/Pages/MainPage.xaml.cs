@@ -42,7 +42,7 @@ namespace PracService.Pages
 
         private void btnService_Click(object sender, RoutedEventArgs e)
         {
-            //NavigationService.Navigate(new ServicePage());
+            NavigationService.Navigate(new ServicePage());
         }
 
         private void lvCS_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -50,7 +50,7 @@ namespace PracService.Pages
             var isSelected = lvCS.SelectedItem as Client_Servise;
             if(isSelected != null)
             {
-                //NavigationService.Navigate(new)
+                NavigationService.Navigate(new EditCSPage());
             }
         }
     }
