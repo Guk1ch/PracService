@@ -42,7 +42,7 @@ namespace PracService.Pages
 
 		private void lvS_SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
-			var isSelected = lvS.SelectedItem as Service;
+			var isSelected = lvS.SelectedItem as Client_Servise;
 			if (isSelected != null)
 			{
 				NavigationService.Navigate(new EditCSPage(isSelected));

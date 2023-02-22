@@ -50,7 +50,7 @@ namespace PracService.Pages
             var isSelected = lvCS.SelectedItem as Client_Servise;
             if(isSelected != null)
             {
-                NavigationService.Navigate(new EditCSPage());
+                NavigationService.Navigate(new EditCSPage(isSelected));
             }
         }
     }

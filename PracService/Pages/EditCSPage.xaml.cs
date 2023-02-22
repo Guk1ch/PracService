@@ -22,7 +22,7 @@ namespace PracService.Pages
     /// </summary>
     public partial class EditCSPage : Page
     {
-        public EditCSPage(Service service)
+        public EditCSPage(Client_Servise client_Servise)
         {
             InitializeComponent();
         }
